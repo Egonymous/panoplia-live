@@ -21,6 +21,22 @@
           "rarity_set": 1.5
         }
       }
+    },
+    {
+      "id": "public_beta_celebration",
+      "title": {
+        "fr": "Célébration de la bêta publique",
+        "en": "Public Beta Celebration"
+      },
+      "text": {
+        "fr": "Panoplia ouvre ses portes au royaume tout entier. Pour fêter l'événement, les créatures abandonnent une bourse plus lourde à qui les terrasse.",
+        "en": "Panoplia opens its gates to the whole realm. To mark the occasion, creatures drop a heavier purse for whoever brings them down."
+      },
+      "startsAt": "2026-08-02T00:00:00Z",
+      "endsAt": "2026-08-09T00:00:00Z",
+      "modifiers": {
+        "goldMultiplier": 1.1
+      }
     }
   ]
 }
