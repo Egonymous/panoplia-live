@@ -1,0 +1,26 @@
+{
+  "_comment": "Flux d'evenements de monde de Panoplia — version TEST. Seuls les builds de test (npm run build:test) et le staging consultent ce fichier : editer ici ne touche AUCUN joueur. Meme schema qu'events.json ; c'est ici qu'on essaie un evenement avant de le porter en production.",
+  "events": [
+    {
+      "id": "example_hell_unleashed",
+      "title": {
+        "fr": "Les Enfers se déchaînent",
+        "en": "Hell Unleashed"
+      },
+      "text": {
+        "fr": "Un souffle brûlant traverse le royaume : les monstres qui en émergent sont plus résistants et plus féroces que jamais, mais leurs dépouilles regorgent de butin.",
+        "en": "A scorching wind sweeps the realm: the monsters it spawns are tougher and fiercer than ever, but their remains overflow with loot."
+      },
+      "startsAt": "2026-01-01T00:00:00Z",
+      "endsAt": "2026-01-08T00:00:00Z",
+      "modifiers": {
+        "opponentStatMultiplier": 1.5,
+        "goldMultiplier": 1.2,
+        "lootRarityWeightMultipliers": {
+          "rarity_epic": 2,
+          "rarity_set": 1.5
+        }
+      }
+    }
+  ]
+}
