@@ -1,5 +1,5 @@
 {
-  "_comment": "Flux d'evenements de monde de Panoplia — version TEST. Seuls les builds de test (npm run build:test) et le staging consultent ce fichier : editer ici ne touche AUCUN joueur. Meme schema qu'events.json ; c'est ici qu'on essaie un evenement avant de le porter en production.",
+  "_comment": "Flux d'evenements de monde de Panoplia — version TEST. Seuls les builds de test (npm run build:test) et le staging consultent ce fichier : editer ici ne touche AUCUN joueur. Meme schema qu'events.json ; c'est ici qu'on essaie un evenement avant de le porter en production. `links` porte deux entrees d'exemple (IDEE-246 lot 1) pointant vers la page itch.io reelle du jeu, pour voir le rendu de la section communautaire de l'ecran Reglages sur le staging.",
   "events": [
     {
       "id": "example_hell_unleashed",
@@ -37,6 +37,26 @@
       "modifiers": {
         "goldMultiplier": 1.1
       }
+    }
+  ],
+  "links": [
+    {
+      "id": "staging_example_itch_community",
+      "kind": "community",
+      "label": {
+        "fr": "Suivre Panoplia sur itch.io",
+        "en": "Follow Panoplia on itch.io"
+      },
+      "url": "https://egonymous.itch.io/panoplia"
+    },
+    {
+      "id": "staging_example_itch_support",
+      "kind": "support",
+      "label": {
+        "fr": "Soutenir Panoplia sur itch.io",
+        "en": "Support Panoplia on itch.io"
+      },
+      "url": "https://egonymous.itch.io/panoplia"
     }
   ]
 }

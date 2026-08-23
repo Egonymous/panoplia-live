@@ -1,5 +1,5 @@
 {
-  "_comment": "Flux d'evenements de monde de Panoplia. Le jeu relit ce fichier au demarrage puis toutes les 5 minutes : editer ce fichier ici publie un evenement EN DIRECT, sans mise a jour du jeu. Un evenement est actif dans l'intervalle demi-ouvert [startsAt, endsAt) (dates ISO 8601, UTC). `modifiers` et chacun de ses champs sont FACULTATIFS : un champ absent = aucun effet sur ce domaine (multiplicateur neutre 1, ou aucune entree dans lootRarityWeightMultipliers). Raretes valides : rarity_common, rarity_rare, rarity_epic, rarity_set. L'evenement ci-dessous est un EXEMPLE A DATES PASSEES (donc toujours inactif), garde comme gabarit. ATTENTION : ce fichier est lu par les JOUEURS. Pour essayer un evenement, editer events-staging.json, que seules les builds de test et le staging consultent.",
+  "_comment": "Flux d'evenements de monde de Panoplia. Le jeu relit ce fichier au demarrage puis toutes les 5 minutes : editer ce fichier ici publie un evenement EN DIRECT, sans mise a jour du jeu. Un evenement est actif dans l'intervalle demi-ouvert [startsAt, endsAt) (dates ISO 8601, UTC). `modifiers` et chacun de ses champs sont FACULTATIFS : un champ absent = aucun effet sur ce domaine (multiplicateur neutre 1, ou aucune entree dans lootRarityWeightMultipliers). Raretes valides : rarity_common, rarity_rare, rarity_epic, rarity_set. L'evenement ci-dessous est un EXEMPLE A DATES PASSEES (donc toujours inactif), garde comme gabarit. `links` (IDEE-246, BACKLOG.md) : tableau de liens affiches par l'ecran Reglages du jeu, chaque entree { id, kind, label: {fr,en}, url, platform? }. kind vaut community/support/rate ; platform (itch/gamejolt/newgrounds) ne compte que pour kind=rate. url DOIT commencer par https:// (sinon l'entree entiere est rejetee) ; un id en double ne garde que la premiere occurrence. links est VIDE ici tant qu'aucune plateforme communautaire reelle n'existe (zero lien code en dur dans le jeu, jamais de lien invente). ATTENTION : ce fichier est lu par les JOUEURS. Pour essayer un evenement ou un lien, editer events-staging.json, que seules les builds de test et le staging consultent.",
   "events": [
     {
       "id": "example_hell_unleashed",
@@ -22,5 +22,6 @@
         }
       }
     }
-  ]
+  ],
+  "links": []
 }
