@@ -23,5 +23,16 @@
       }
     }
   ],
-  "links": []
+  "links": [
+    {
+      "id": "rate_gamejolt",
+      "kind": "rate",
+      "platform": "gamejolt",
+      "label": {
+        "fr": "Noter le jeu",
+        "en": "Rate the game"
+      },
+      "url": "https://gamejolt.com/games/panoplia/1090436"
+    }
+  ]
 }
