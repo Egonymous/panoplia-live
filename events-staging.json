@@ -16,10 +16,7 @@
       "modifiers": {
         "opponentStatMultiplier": 1.5,
         "goldMultiplier": 1.2,
-        "lootRarityWeightMultipliers": {
-          "rarity_epic": 2,
-          "rarity_set": 1.5
-        }
+        "setChannelChanceMultiplier": 1.5
       }
     },
     {
