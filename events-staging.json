@@ -41,6 +41,16 @@
   ],
   "links": [
     {
+      "id": "comments_gamejolt",
+      "kind": "community",
+      "platform": "gamejolt",
+      "label": {
+        "fr": "Vos retours : commentaires GameJolt",
+        "en": "Your feedback: GameJolt comments"
+      },
+      "url": "https://gamejolt.com/games/panoplia/1090436"
+    },
+    {
       "id": "staging_example_itch_community",
       "kind": "community",
       "label": {
